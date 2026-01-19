@@ -74,6 +74,7 @@ func _ready():
 	%IgnoreStateChangesCheckbox.set_pressed_no_signal(ignore_state_changes)
 	%IgnoreTransitionsCheckbox.set_pressed_no_signal(ignore_transitions)
 		
+	enabled = false
 	
 	
 

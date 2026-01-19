@@ -54,6 +54,8 @@ func _on_detection_region_area_exited(area: Area3D) -> void:
 
 func _on_following_state_processing(delta: float) -> void:
 	look_at($"../Character".global_position)
+	wander_destination = $"../Character".global_position
+	global_position = global_position.move_toward(wander_destination, velocity * delta)
 
 # Actions while roaming store freely
 func _on_free_wandering_state_physics_processing(delta: float) -> void:

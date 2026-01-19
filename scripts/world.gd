@@ -35,6 +35,14 @@ func _ready() -> void:
 	astar.connect_points(6, 7)
 	astar.connect_points(7, 8)
 	astar.connect_points(8, 9)
-	
-	if OS.is_debug_build():
-		print(astar.get_point_ids())
+
+
+func _process(delta: float) -> void:
+	if debug.debug_enabled:
+		var points = astar.get_point_ids()
+		
+		while !points.is_empty():
+			for point in points:
+				if astar.are_points_connected(points[0], point):
+					DebugDraw3D.draw_line(astar.get_point_position(points[0]), astar.get_point_position(point))
+			points.remove_at(0)
