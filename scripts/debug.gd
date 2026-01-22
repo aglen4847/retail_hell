@@ -6,16 +6,10 @@ signal enable_debug
 signal disable_debug
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
-
-func _unhandled_input(event: InputEvent) -> void:
-	if event is InputEventKey:
-		if event.pressed and event.keycode == debug_key:
-			toggle_debug()
-			print("debug enabled: " + str(debug_enabled))
+func _process(_delta: float) -> void:
+	if Input.is_action_just_pressed("debug"):
+		toggle_debug()
+		print("debug enabled: " + str(debug_enabled))
 
 
 func toggle_debug():

@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://pe7a4weirj2g"
-path.s3tc="res://.godot/imported/dark.png-6d46f668c80e231a58e570df85aad257.s3tc.ctex"
+uid="uid://c7fsawcf5wo80"
+path.s3tc="res://.godot/imported/tile_nm.png-292c0e2e8fb648cffb3a2ca0df58772c.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/dark.png"
-dest_files=["res://.godot/imported/dark.png-6d46f668c80e231a58e570df85aad257.s3tc.ctex"]
+source_file="res://textures/tile_nm.png"
+dest_files=["res://.godot/imported/tile_nm.png-292c0e2e8fb648cffb3a2ca0df58772c.s3tc.ctex"]
 
 [params]
 
@@ -22,7 +22,7 @@ compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
-compress/normal_map=0
+compress/normal_map=1
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1

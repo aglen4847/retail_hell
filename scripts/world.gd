@@ -37,7 +37,7 @@ func _ready() -> void:
 	astar.connect_points(8, 9)
 
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if debug.debug_enabled:
 		var points = astar.get_point_ids()
 		
